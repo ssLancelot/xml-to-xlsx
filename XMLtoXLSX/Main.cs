@@ -36,7 +36,7 @@ namespace XMLtoXLSX
                                Path.Combine(new FileInfo(txtXmlPath.Text).DirectoryName, txtFileName.Text);
                         System.Data.DataTable dt = CreateDataTableFromXml(txtXmlPath.Text);
                         ExportDataTableToExcel(dt, CustXmlFilePath);
-                        MessageBox.Show("Dönüştürme başarılı!!");
+                        //MessageBox.Show("Dönüştürme başarılı!!");
                     }
 
                 }
@@ -50,7 +50,7 @@ namespace XMLtoXLSX
                         System.Data.DataTable dt = CreateDataTableFromXml
                         (txtXmlPath.Text);
                         ExportDataTableToExcel(dt, XlFile);
-                        MessageBox.Show("Dönüştürme başarılı!!");
+                        //MessageBox.Show("Dönüştürme başarılı!!");
                     }
                     else
                     {
@@ -127,7 +127,6 @@ namespace XMLtoXLSX
         private void Form1_Load(object sender, EventArgs e)
         {
             OFD.Filter = "Xml Dosyaları (.xml)|*.xml";
-            this.BackColor =ColorTranslator.FromHtml("#1c273a");
         }
 
         private void chbExcelFileName_CheckedChanged(object sender, EventArgs e)

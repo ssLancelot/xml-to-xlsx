@@ -39,11 +39,9 @@
             this.btnConvert = new DevExpress.XtraEditors.SimpleButton();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.hyperlinkLabelControl1 = new DevExpress.XtraEditors.HyperlinkLabelControl();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.txtXmlPath.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtFileName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chbExcelFileName.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtXmlPath
@@ -60,14 +58,14 @@
             // 
             resources.ApplyResources(this.chbExcelFileName, "chbExcelFileName");
             this.chbExcelFileName.Name = "chbExcelFileName";
-            this.chbExcelFileName.Properties.Appearance.ForeColor = System.Drawing.Color.White;
+            this.chbExcelFileName.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
             this.chbExcelFileName.Properties.Appearance.Options.UseForeColor = true;
             this.chbExcelFileName.Properties.Caption = resources.GetString("chbExcelFileName.Properties.Caption");
             this.chbExcelFileName.CheckedChanged += new System.EventHandler(this.chbExcelFileName_CheckedChanged);
             // 
             // labelControl1
             // 
-            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.Black;
             this.labelControl1.Appearance.Options.UseForeColor = true;
             resources.ApplyResources(this.labelControl1, "labelControl1");
             this.labelControl1.Name = "labelControl1";
@@ -97,13 +95,6 @@
             this.hyperlinkLabelControl1.Name = "hyperlinkLabelControl1";
             this.hyperlinkLabelControl1.Click += new System.EventHandler(this.hyperlinkLabelControl1_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::XMLtoXLSX.Properties.Resources.xmlgif;
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
-            // 
             // Form1
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
@@ -112,7 +103,6 @@
             this.Appearance.Options.UseForeColor = true;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.hyperlinkLabelControl1);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.btnConvert);
@@ -129,7 +119,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtXmlPath.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtFileName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chbExcelFileName.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -145,7 +134,6 @@
         private DevExpress.XtraEditors.SimpleButton btnConvert;
         private System.Windows.Forms.ProgressBar progressBar1;
         private DevExpress.XtraEditors.HyperlinkLabelControl hyperlinkLabelControl1;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
